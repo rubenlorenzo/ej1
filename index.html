@@ -54,10 +54,9 @@
 
             <!-- Button -->
             <div class="article_button centered_text">
-              <button class="highlighted_text">{{item.button}}</button>
+              <button class="highlighted_text" data-toggle="modal" data-target="#modal_login">{{item.button}}</button>
             </div>
           </article>
-          
         </div>
       </section>
 
@@ -70,6 +69,30 @@
         </footer>      
       </div>
 
+    </div>
+
+    <!-- Modal login -->
+  <div class="modal fade" id="modal_login" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Do you wanna buy it?</h4>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" value="Username"><br/>
+              <input type="text" value="Password">
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">CANCEL</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">CONFIRM</button>
+          </div>
+        </div>
+        
+      </div>
     </div>
     
     <!-- Code Vue -->
