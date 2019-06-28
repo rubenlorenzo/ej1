@@ -7,6 +7,40 @@ header{
     padding: 10px 10px;
 }
 
+/* article */
+article{
+    margin: 5%;
+    width: 15em;
+}
+.article_img img{
+    height: 15em;
+    padding: 10% 0% 10% 0%;
+}
+
+.article_title_text{
+    padding-top: 2.em;
+    width: 80%;
+    margin: -10% 10%;
+    position: relative;
+    padding: 4% 0% 1% 0%; 
+}
+
+.article_title_text h4{
+    font-size: 1.2em;
+}
+.article_price{
+    background-color: lightgray;
+    font-weight: bold;
+    padding: 3em 0px 2em 0px;
+}
+.article_button{
+    background-color: black;
+    padding: 2% 0% 2% 0%;
+}
+.article_button button{
+    border: 0px;
+}
+
 /* Footer */
 footer{
     background-color: black;
@@ -19,4 +53,13 @@ footer{
 #text_footer img{
     height: 1.2em;
     margin: auto;
+}
+
+/* other */
+.centered_text{
+    text-align: center;
+}
+.highlighted_text{
+    background-color: black;
+    color: white;
 }
