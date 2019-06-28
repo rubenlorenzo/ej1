@@ -5,7 +5,11 @@ body {
 /* Header */
 header{
     background-color:black;
-    padding: 10px 10px;
+    padding: 1em 1em;
+}
+
+header img{
+    padding-left: 1em;
 }
 
 /* Section */
@@ -54,7 +58,7 @@ article{
 /* Footer */
 footer{
     background-color: black;
-    padding: 10px 10px;      
+    padding: 0.5em 0.5em;      
     color: white;
 }
 #text_footer{
