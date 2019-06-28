@@ -1,15 +1,25 @@
 body {
     font-family: monospace;
 }
+
 /* Header */
 header{
-    background-color: black;    
+    background-color:black;
     padding: 10px 10px;
 }
 
-/* article */
+/* Section */
+section{
+    margin: 2% 0% 4% 0%;
+}
+
+/* Article */
+#articles{
+    margin: auto;
+    width: 60%;
+}
 article{
-    margin: 5%;
+    margin: auto;
     width: 15em;
 }
 .article_img img{

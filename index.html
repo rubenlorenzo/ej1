@@ -8,60 +8,89 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-    <!-- Style CSS Page -->
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     
+    <!-- Style CSS Page -->    
     <link rel="stylesheet" href="./style.css"> 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet"> 
 
     <title>Slash Mobility</title>
   </head>
+
   <body>
-    <div class="container">
-
-      <div class="row">
-
-          <!-- Header -->
+    <div class="container-full">
+      
+      <!-- Header -->
+      <div class="row">          
           <header class="col-sm-12">
               <img src="./img_logo_slashmobility.png" alt="" srcset="">            
           </header>
-
-          <!-- Section -->
-          <section>
-            <article>
-                <!-- Image -->
-                <div class="article_img centered_text">
-                  <img src="./nutella.png" alt="">
-                </div>
-                
-                <!-- title -->
-                <div class="article_title centered_text">
-                  <div class="article_title_text highlighted_text">
-                      <h4>Nutela</h4>
-                  </div>
-                  
-                </div>
-                
-                <!-- Price -->
-                <div class="article_price centered_text">
-                  <span>10€</span>
-                </div>
-
-                <!-- Button -->
-                <div class="article_button centered_text">
-                  <button class="highlighted_text">BUY</button>
-                </div>
-            </article>
-          </section>
-
-          <!-- Footer -->
-          <footer class="col-sm-12">
-            <div id="text_footer" class="centered_text">
-                <img src="./Copyright.svg.png" alt=""> <span>Slashmobility 2018</span>
-            </div>            
-          </footer>
-
       </div>
+      
+      <!-- Section -->      
+      <section>
+        <div class="row" id="articles">
+          
+          <!-- article -->
+          <article class="col-sm-3" v-for="item in items">
+            <!-- Image -->
+            <div class="article_img centered_text">
+              <img v-bind:src="item.img" alt="">
+            </div>
+            
+            <!-- title -->
+            <div class="article_title centered_text">
+              <div class="article_title_text highlighted_text">
+                  <h4>{{item.title}}</h4>
+              </div>
+              
+            </div>
+            
+            <!-- Price -->
+            <div class="article_price centered_text">
+              <span>{{item.price}}</span>
+            </div>
+
+            <!-- Button -->
+            <div class="article_button centered_text">
+              <button class="highlighted_text">{{item.button}}</button>
+            </div>
+          </article>
+          
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <div class="row">          
+        <footer class="col-sm-12">
+          <div id="text_footer" class="centered_text">
+            <img src="./Copyright.svg.png" alt=""> <span>Slashmobility 2018</span>
+          </div>            
+        </footer>      
+      </div>
+
     </div>
+    
+    <!-- Code Vue -->
+    <script>
+      var app = new Vue({
+        el: '#articles',
+        data: {
+          items: [
+            { img: "./nutella.png", title: "Nutela", price: "10€", button: "BUY" },
+            { img: "./nutella.png", title: "Nutela", price: "10€", button: "BUY" },
+            { img: "./nutella.png", title: "Nutela", price: "10€", button: "BUY" },
+            { img: "./nutella.png", title: "Nutela", price: "10€", button: "BUY" },
+
+            { img: "./nutella.png", title: "Nutela", price: "10€", button: "BUY" },
+            { img: "./nutella.png", title: "Nutela", price: "10€", button: "BUY" },
+            { img: "./nutella.png", title: "Nutela", price: "10€", button: "BUY" },
+            { img: "./nutella.png", title: "Nutela", price: "10€", button: "BUY" },
+          ]
+        }
+      })
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
