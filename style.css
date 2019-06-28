@@ -1,8 +1,22 @@
 body {
     font-family: monospace;
 }
+/* Header */
 header{
     background-color: black;    
     padding: 10px 10px;
+}
 
+/* Footer */
+footer{
+    background-color: black;
+    padding: 10px 10px;      
+    color: white;
+}
+#text_footer{
+    text-align:center;
+}
+#text_footer img{
+    height: 1.2em;
+    margin: auto;
 }
