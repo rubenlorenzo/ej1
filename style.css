@@ -69,11 +69,52 @@ footer{
     margin: auto;
 }
 
-/* other */
+/* Others */
 .centered_text{
     text-align: center;
 }
 .highlighted_text{
     background-color: black;
     color: white;
+}
+
+/* Modal login */
+.modal{
+    top:30%;
+}
+.modal-header{
+    border-bottom:0px;
+    width: 55%;   
+    margin: auto;
+}
+.modal-title{
+    text-align: center; 
+    font-size: 1.2em;  
+}
+.modal-body form input{
+    border:1px solid lightgray;
+    padding: 0.8em 0.8em 0.8em 0.8em;
+    width: 96%;
+    color: gray;
+}
+.modal-body #input-username{
+    margin-bottom: 0.5em;
+}
+.modal-footer{
+    border-top:0px;
+    padding: 0px;
+}
+.modal-footer .btn{
+    border-radius: 0em;
+    margin: 0px;
+    padding:1em 0em 1em 0em;
+    color:white;
+    width: 50%;
+    font-weight: bold;
+}
+#btn-cancel{
+    background-color: gray;
+}
+#btn-confirm{
+    background-color: black;    
 }
